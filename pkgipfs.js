@@ -6,7 +6,7 @@ const { exec } = require('pkg');
 const targetPlatform = process.platform.replace('darwin', 'macos');
 
 const target = `node10-${targetPlatform}-x64`;
-const outDir = path.join('pkg', targetPlatform);
+const outDir = 'pkg';
 exec(['package.json', '--target', target, '--out-dir', outDir]).then(() => {
     let basePath = 'node_modules';
     let nativeModules = ['keccak', 'leveldown', 'rabin', 'secp256k1', 'ursaNative'];
