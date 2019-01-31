@@ -48,7 +48,7 @@
     "coverage": "aegir coverage",
     "coverage-publish": "aegir-coverage publish",
     "dep-check": "npx dependency-check package.json './test/**/*.js' './src/**/*.js'",
-    "postinstall": "npm install && node pkgipfs"
+    "postinstall": "node pkgipfs"
   },
   "repository": {
     "type": "git",
