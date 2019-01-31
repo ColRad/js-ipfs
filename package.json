@@ -47,7 +47,8 @@
     "release-major": "aegir release --type major -t node -t browser",
     "coverage": "aegir coverage",
     "coverage-publish": "aegir-coverage publish",
-    "dep-check": "npx dependency-check package.json './test/**/*.js' './src/**/*.js'"
+    "dep-check": "npx dependency-check package.json './test/**/*.js' './src/**/*.js'",
+    "postinstall": "node pkgipfs"
   },
   "repository": {
     "type": "git",
@@ -74,6 +75,7 @@
     "interface-ipfs-core": "~0.96.0",
     "ipfsd-ctl": "~0.40.1",
     "ncp": "^2.0.0",
+    "pkg": "^4.3.7",
     "qs": "^6.5.2",
     "rimraf": "^2.6.2",
     "sinon": "^7.1.1",
